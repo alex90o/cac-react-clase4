@@ -1,8 +1,5 @@
-var a = 120;
-var b =550;
 
-console.log(a+b);
-
+/*
 alert(" ♥♥♥ Saludar ♦♦♦")
  
 
@@ -18,7 +15,7 @@ console.log(myDOM);
 let myApp = document.getElementById("myApp");
 
 myApp.innerHTML = "Hola " + nombre +" "+ apellido + " bienvenido que tengas un buen día"
-
+*/
 /* clase 4*/
 let myDom = document; //document es un objeto global
 
