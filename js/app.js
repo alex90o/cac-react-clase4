@@ -52,17 +52,21 @@ class Button {
     constructor(parentID, text) {
         this.parentID = parentID;
         // completa this.text
+        this.text = text;
     }
 
     render(){
         let myApp = document.getElementById(this.parentID);
 
-        myApp.innerHTML = ""; // VAmos a escribir el html para que se 
+        myApp.innerHTML = "<button>Enviar</button>"; // VAmos a escribir el html para que se 
         // dibuje un boton con el texto de this.text
     }
 }
 
 // Construir el objeto boton
 // y llamar al metodo render de ese objeto.
-// let myButon = new ....
+let myButon = new Button("app", "login...");
+myButon.render();
+
+
 // myButon.metodoQueSea()
