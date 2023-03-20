@@ -94,10 +94,19 @@ class Input {
 let myInput = new Input("inputs1", "checkbox");
  myInput.render();
 
-// let myInput2 = new Input("footer", "date");
-// myInput2.render();
+let myInput2 = new Input("inputs2", "date");
+myInput2.render();
 
-// let myInput3 = new Input("footer", "password");
-// myInput3.render();
+let myInput3 = new Input("inputs3", "password");
+ myInput3.render();
 
-// let mySuperArrayofStrings = ["Login" , "Signup" , "Reset" ];
+ let myInput4 = new Input("inputs4", "text");
+ myInput4.render();
+
+ let myInput5 = new Input("inputs5", "range");
+ myInput5.render();
+
+ let myInput6 = new Input("inputs6", "color");
+ myInput6.render();
+
+
