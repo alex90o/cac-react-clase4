@@ -57,16 +57,47 @@ class Button {
 
     render(){
         let myApp = document.getElementById(this.parentID);
+    const myButtonHTML = myApp.innerHTML + "<button> " + this.text + "</button>"
+    myApp.innerHTML = myButtonHTML;
 
-        myApp.innerHTML = "<button>Enviar</button>"; // VAmos a escribir el html para que se 
-        // dibuje un boton con el texto de this.text
     }
+    
+
 }
 
 // Construir el objeto boton
 // y llamar al metodo render de ese objeto.
-let myButon = new Button("app", "login...");
+let myButon = new Button("app", "Button Creado...");
 myButon.render();
 
 
-// myButon.metodoQueSea()
+
+
+
+class Input {
+   constructor(parentID, type) {
+         this.parentID = parentID;
+    
+     this.type = type;
+    }
+
+    render() {
+       let myApp = document.getElementById(this.parentID);
+
+       const myInputHTML = myApp.innerHTML + "<input type="+ this.type + ">";
+
+     myApp.innerHTML = myInputHTML; 
+       
+   }   
+ }
+
+let myInput = new Input("inputs1", "checkbox");
+ myInput.render();
+
+// let myInput2 = new Input("footer", "date");
+// myInput2.render();
+
+// let myInput3 = new Input("footer", "password");
+// myInput3.render();
+
+// let mySuperArrayofStrings = ["Login" , "Signup" , "Reset" ];
